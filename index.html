@@ -8,42 +8,7 @@
 </head>
 <body>
 	<style>
-	/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    font-size: 75px;
-}
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 45px 200px;
-    transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    border: 1px solid #ccc;
-    border-top: none;
-    padding: 45px 200px;
-}
 
 
 	
@@ -108,60 +73,11 @@
 	</style>
 	 
 
-<!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">About</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Contact</button>
-</div>
-
-<!-- Tab content -->
-<div id="Home" class="tabcontent">
-  <h3>Home</h3>
-  <p>Welcome to the official website for Aly Anne Productions! Remember to check out the channel on YouTube!</p>
-</div>
-
-<div id="About" class="tabcontent">
-  <h3>About</h3>
-  <p>Aly Anne Productions was created by Alyson Welch who is a 13 year old YouTuber. Aly enjoys making fun, entertaining vlogs and videos for all the enjoy. She will create videos with her family and friends.</p> 
-</div>
-
-<div id="Contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-		  <!-- Thumbnail images -->
-  <div class="row">
-      <img class="demo cursor" src="" style="width:50%; height:50%;" onclick="currentSlide(1)" alt="Aly Filming">
-      <img class="demo cursor" src="" style="width:50%" onclick="currentSlide(2)" alt="Aly Editing">
-      <img class="demo cursor" src="" style="width:50%; height:50%;" onclick="currentSlide(3)" alt="Alyson Welch">
-      <img class="demo cursor" src="" style="width:50%" onclick="currentSlide(4)" alt="Video">
-      <img class="demo cursor" src="" style="width:50%; height:50%;" onclick="currentSlide(5)" alt="Channel">
-    </div>
 
 
 </div>
 <script> 
-	function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+	
 	</script>
 	
 	
